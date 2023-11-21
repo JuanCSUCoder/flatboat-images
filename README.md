@@ -2,6 +2,12 @@
 
 This repository contains all the Dockerfiles required for *FlatBoat Ecosystem*.
 
+## Build & Push
+
+```bash
+docker-compose build && docker-compose push
+```
+
 ## Estructura de Carpetas
 
 ```bash
