@@ -1,0 +1,6 @@
+services:
+  roboten_iron:
+    build: 
+      context: ./dev/iron/
+      dockerfile: default.Dockerfile
+    image: "juancsucoder/roboten_iron:0.0.1"
