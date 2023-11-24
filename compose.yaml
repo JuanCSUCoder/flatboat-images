@@ -1,6 +1,11 @@
 services:
-  roboten_iron:
+  roboteim_ws_iron_current:
     build: 
       context: ./dev/iron/
       dockerfile: default.Dockerfile
-    image: "juancsucoder/roboten_iron:0.0.1"
+    image: "juancsucoder/roboteim_ws_iron:0.0.3"
+  roboteim_ws_iron_latest:
+    build: 
+      context: ./dev/iron/
+      dockerfile: default.Dockerfile
+    image: "juancsucoder/roboteim_ws_iron:latest"
