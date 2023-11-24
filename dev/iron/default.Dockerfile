@@ -40,7 +40,7 @@ RUN apt-get update && apt-get install -y ros-$ROS_DISTRO-turtlebot3*
 
 # Configure User
 USER $USERNAME
-RUN echo "source /opt/ros/humble/setup.bash" >> /home/rosuser/.bashrc
+RUN echo "source /opt/ros/iron/setup.bash" >> /home/rosuser/.bashrc
 RUN echo "source /home/rosuser/ws/install/setup.bash || echo 'Workspace not Ready. Run colcon build at /home/rosuser/ws'" >> /home/rosuser/.bashrc
 RUN echo "export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp" >> /home/rosuser/.bashrc
 RUN echo "export TURTLEBOT3_MODEL=waffle" >> /home/rosuser/.bashrc
