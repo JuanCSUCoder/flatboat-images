@@ -3,9 +3,9 @@ services:
     build: 
       context: ./dev/iron/
       dockerfile: default.Dockerfile
-    image: "juancsucoder/roboteim_ws_iron:0.0.3"
+    image: "juancsucoder/robotim_ws_iron:0.0.3"
   roboteim_ws_iron_latest:
     build: 
       context: ./dev/iron/
       dockerfile: default.Dockerfile
-    image: "juancsucoder/roboteim_ws_iron:latest"
+    image: "juancsucoder/robotim_ws_iron:latest"
