@@ -16,6 +16,9 @@ RUN apt-get update && apt-get upgrade -y
 RUN apt-get install -y python3-pip
 ENV SHELL /bin/bash
 
+# Install system dependencies
+RUN apt-get update && apt-get install -y wget
+
 # Install MoveIt
 RUN apt-get update && apt-get install -y ros-$ROS_DISTRO-moveit
 
