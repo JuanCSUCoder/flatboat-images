@@ -1,11 +1,16 @@
 services:
-  roboteim_ws_iron_current:
-    build: 
-      context: ./dev/iron/
-      dockerfile: default.Dockerfile
-    image: "juancsucoder/robotim_ws_iron:0.0.5"
-  roboteim_ws_iron_latest:
+  robotim_ws_iron_latest:
     build: 
       context: ./dev/iron/
       dockerfile: default.Dockerfile
     image: "juancsucoder/robotim_ws_iron"
+  robotim_ws_humble:
+    build:
+      context: ./dev/humble/
+      dockerfile: no_gpu.Dockerfile
+    image: "juancsucoder/robotim_ws_humble"
+  robotim_ws_noetic:
+    build:
+      context: ./dev/noetic/
+      dockerfile: no_gpu.Dockerfile
+    image: "juancsucoder/robotim_ws_noetic"

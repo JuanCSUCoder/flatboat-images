@@ -36,6 +36,9 @@ RUN apt-get update && apt-get install -y ros-$ROS_DISTRO-rmw-cyclonedds-cpp
 # Install TurtleBot3
 RUN apt-get update && apt-get install -y ros-$ROS_DISTRO-turtlebot3*
 
+# Upgrade
+RUN apt-get update && apt-get upgrade -y
+
 # ********************************************************
 # * Anything else you want to do like clean up goes here *
 # ********************************************************
