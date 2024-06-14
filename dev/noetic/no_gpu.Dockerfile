@@ -42,6 +42,9 @@ RUN apt-get update && apt-get install -y ros-$ROS_DISTRO-joy ros-$ROS_DISTRO-tel
 RUN apt-get update && apt-get install -y ros-$ROS_DISTRO-dynamixel-sdk
 RUN apt-get update && apt-get install -y ros-$ROS_DISTRO-turtlebot3*
 
+# Upgrade
+RUN apt-get update && apt-get upgrade -y
+
 # ********************************************************
 # * Anything else you want to do like clean up goes here *
 # ********************************************************
