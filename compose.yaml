@@ -1,4 +1,9 @@
 services:
+  robotim_ws_jazzy:
+    build:
+      context: ./dev/jazzy/
+      dockerfile: no_gpu.Dockerfile
+    image: "juancsucoder/robotim_ws_jazzy"
   robotim_ws_iron_latest:
     build: 
       context: ./dev/iron/
